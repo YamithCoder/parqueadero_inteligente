@@ -1,4 +1,4 @@
-# 🚗 Simulador de Parqueadero Inteligente
+# Simulador de Parqueadero Inteligente
 
 **Universidad EAN — Arquitectura de Computadores y Sistemas Operativos**  
 **Estudiante:** Yamith Andrey Peñuela Rincón  
@@ -7,7 +7,7 @@
 
 ---
 
-## 📋 Descripción
+## Descripción
 
 Simulador de parqueadero inteligente que modela la gestión de recursos compartidos en un entorno concurrente, aplicando los principios fundamentales de los Sistemas Operativos.
 
@@ -26,13 +26,13 @@ Cada vehículo es un **hilo independiente** que compite por un número limitado 
 
 ---
 
-## 🖥️ Captura del simulador
+## Captura del simulador
 
 ![Simulador en ejecución](docs/captura_simulador.png)
 
 ---
 
-## ⚙️ Tecnologías
+## Tecnologías
 
 - **Python 3.10+**
 - `threading` — hilos, Semaphore, Lock, Event
@@ -42,7 +42,7 @@ Cada vehículo es un **hilo independiente** que compite por un número limitado 
 
 ---
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 parqueadero/
@@ -57,7 +57,7 @@ parqueadero/
 
 ---
 
-## 🚀 Instalación y ejecución
+## Instalación y ejecución
 
 ### Requisitos
 - Python 3.10 o superior
@@ -80,7 +80,7 @@ python main.py
 
 ---
 
-## 🎮 Uso del simulador
+## Uso del simulador
 
 1. Presiona **INICIAR** para arrancar el sistema
 2. Usa **+1 Vehículo** o **+5 Vehículos** para agregar vehículos manualmente
@@ -95,7 +95,7 @@ python main.py
 
 ---
 
-## 🔧 Mecanismos de sincronización
+## Mecanismos de sincronización
 
 ### `threading.Semaphore`
 Controla cuántos vehículos pueden estar estacionados simultáneamente. Usa `acquire(timeout=T)` para prevenir deadlock — si un vehículo no obtiene cupo en T segundos, abandona la espera.
@@ -112,7 +112,7 @@ Los hilos nunca modifican widgets de Tkinter directamente. Depositan eventos en 
 
 ---
 
-## 📊 Métricas generadas
+## Métricas generadas
 
 Cada sesión genera automáticamente en la carpeta `logs/`:
 
@@ -125,7 +125,7 @@ Las métricas incluyen: utilización del parqueadero, tiempo promedio de espera,
 
 ---
 
-## 🧠 Conceptos de SO aplicados
+##Conceptos de SO aplicados
 
 - **Concurrencia:** múltiples hilos ejecutándose simultáneamente
 - **Exclusión mutua:** Lock protege la sección crítica
@@ -136,6 +136,6 @@ Las métricas incluyen: utilización del parqueadero, tiempo promedio de espera,
 
 ---
 
-## 📄 Licencia
+##Licencia
 
 Proyecto académico — Universidad EAN 2026
