@@ -1,0 +1,112 @@
+hora,tipo,nivel,vehiculo_id,vehiculo_tipo,espacios_libres,tiempo_espera_s,tiempo_estacion_s,mensaje
+18:11:40,sistema,info,,,,,,📋 Gestor de métricas iniciado
+18:11:40,sistema,info,,,6,,,✅ Simulador iniciado
+18:11:41,vehiculo_nuevo,info,1,Normal,6,,,🚘 V001 [Normal] → En camino creado
+18:11:42,espera,warning,1,Normal,6,,,⏳ V001 esperando cupo...
+18:11:43,ingreso,success,1,Normal,5,,,✅ V001 ingresó → Espacio #1 | Espera: 0.0s
+18:11:45,vehiculo_nuevo,info,2,Normal,5,,,🚘 V002 [Normal] → En camino creado
+18:11:46,salida,info,1,Normal,6,,3.39,🚪 V001 salió | Estacionado: 3.39s
+18:11:48,espera,warning,2,Normal,6,,,⏳ V002 esperando cupo...
+18:11:49,ingreso,success,2,Normal,5,,,✅ V002 ingresó → Espacio #1 | Espera: 0.0s
+18:11:50,vehiculo_nuevo,info,3,Discapacidad,5,,,🚘 V003 [Discapacidad] → En camino creado
+18:11:51,espera,warning,3,Discapacidad,5,,,⏳ V003 esperando cupo...
+18:11:51,ingreso,success,3,Discapacidad,4,,,✅ V003 ingresó → Espacio #2 | Espera: 0.0s
+18:11:54,salida,info,2,Normal,5,,5.38,🚪 V002 salió | Estacionado: 5.38s
+18:11:54,vehiculo_nuevo,info,4,Normal,5,,,🚘 V004 [Normal] → En camino creado
+18:11:55,salida,info,3,Discapacidad,6,,4.11,🚪 V003 salió | Estacionado: 4.11s
+18:11:56,espera,warning,4,Normal,6,,,⏳ V004 esperando cupo...
+18:11:56,ingreso,success,4,Normal,5,,,✅ V004 ingresó → Espacio #1 | Espera: 0.0s
+18:11:58,vehiculo_nuevo,info,5,Normal,5,,,🚘 V005 [Normal] → En camino creado
+18:11:59,espera,warning,5,Normal,5,,,⏳ V005 esperando cupo...
+18:12:00,ingreso,success,5,Normal,4,,,✅ V005 ingresó → Espacio #2 | Espera: 0.0s
+18:12:00,salida,info,4,Normal,5,,4.53,🚪 V004 salió | Estacionado: 4.53s
+18:12:01,vehiculo_nuevo,info,6,Normal,5,,,🚘 V006 [Normal] → En camino creado
+18:12:03,espera,warning,6,Normal,5,,,⏳ V006 esperando cupo...
+18:12:04,ingreso,success,6,Normal,4,,,✅ V006 ingresó → Espacio #1 | Espera: 0.0s
+18:12:05,salida,info,5,Normal,5,,5.25,🚪 V005 salió | Estacionado: 5.25s
+18:12:06,vehiculo_nuevo,info,7,Normal,5,,,🚘 V007 [Normal] → En camino creado
+18:12:08,espera,warning,7,Normal,5,,,⏳ V007 esperando cupo...
+18:12:08,ingreso,success,7,Normal,4,,,✅ V007 ingresó → Espacio #2 | Espera: 0.0s
+18:12:08,salida,info,6,Normal,5,,4.95,🚪 V006 salió | Estacionado: 4.95s
+18:12:10,vehiculo_nuevo,info,8,Normal,5,,,🚘 V008 [Normal] → En camino creado
+18:12:12,espera,warning,8,Normal,5,,,⏳ V008 esperando cupo...
+18:12:13,ingreso,success,8,Normal,4,,,✅ V008 ingresó → Espacio #1 | Espera: 0.0s
+18:12:13,vehiculo_nuevo,info,9,Discapacidad,4,,,🚘 V009 [Discapacidad] → En camino creado
+18:12:14,espera,warning,9,Discapacidad,4,,,⏳ V009 esperando cupo...
+18:12:14,ingreso,success,9,Discapacidad,3,,,✅ V009 ingresó → Espacio #3 | Espera: 0.0s
+18:12:15,salida,info,7,Normal,4,,6.03,🚪 V007 salió | Estacionado: 6.03s
+18:12:15,salida,info,8,Normal,5,,2.8,🚪 V008 salió | Estacionado: 2.8s
+18:12:16,salida,info,9,Discapacidad,6,,2.46,🚪 V009 salió | Estacionado: 2.46s
+18:12:16,vehiculo_nuevo,info,10,Normal,6,,,🚘 V010 [Normal] → En camino creado
+18:12:18,vehiculo_nuevo,info,11,Normal,6,,,🚘 V011 [Normal] → En camino creado
+18:12:20,espera,warning,10,Normal,6,,,⏳ V010 esperando cupo...
+18:12:20,ingreso,success,10,Normal,5,,,✅ V010 ingresó → Espacio #1 | Espera: 0.0s
+18:12:23,espera,warning,11,Normal,5,,,⏳ V011 esperando cupo...
+18:12:24,ingreso,success,11,Normal,4,,,✅ V011 ingresó → Espacio #2 | Espera: 0.0s
+18:12:24,vehiculo_nuevo,info,12,Discapacidad,4,,,🚘 V012 [Discapacidad] → En camino creado
+18:12:24,espera,warning,12,Discapacidad,4,,,⏳ V012 esperando cupo...
+18:12:25,ingreso,success,12,Discapacidad,3,,,✅ V012 ingresó → Espacio #3 | Espera: 0.0s
+18:12:25,salida,info,10,Normal,4,,5.66,🚪 V010 salió | Estacionado: 5.66s
+18:12:26,salida,info,11,Normal,5,,4.69,🚪 V011 salió | Estacionado: 4.69s
+18:12:28,vehiculo_nuevo,info,13,Normal,5,,,🚘 V013 [Normal] → En camino creado
+18:12:29,salida,info,12,Discapacidad,6,,4.76,🚪 V012 salió | Estacionado: 4.76s
+18:12:31,espera,warning,13,Normal,6,,,⏳ V013 esperando cupo...
+18:12:32,ingreso,success,13,Normal,5,,,✅ V013 ingresó → Espacio #1 | Espera: 0.0s
+18:12:33,vehiculo_nuevo,info,14,Normal,5,,,🚘 V014 [Normal] → En camino creado
+18:12:35,vehiculo_nuevo,info,15,Normal,5,,,🚘 V015 [Normal] → En camino creado
+18:12:36,espera,warning,14,Normal,5,,,⏳ V014 esperando cupo...
+18:12:36,ingreso,success,14,Normal,4,,,✅ V014 ingresó → Espacio #2 | Espera: 0.0s
+18:12:37,espera,warning,15,Normal,4,,,⏳ V015 esperando cupo...
+18:12:38,ingreso,success,15,Normal,3,,,✅ V015 ingresó → Espacio #3 | Espera: 0.0s
+18:12:38,salida,info,13,Normal,4,,6.48,🚪 V013 salió | Estacionado: 6.48s
+18:12:39,salida,info,14,Normal,5,,3.48,🚪 V014 salió | Estacionado: 3.48s
+18:12:39,salida,info,15,Normal,6,,2.4,🚪 V015 salió | Estacionado: 2.4s
+18:12:40,vehiculo_nuevo,info,16,Normal,6,,,🚘 V016 [Normal] → En camino creado
+18:12:41,espera,warning,16,Normal,6,,,⏳ V016 esperando cupo...
+18:12:42,ingreso,success,16,Normal,5,,,✅ V016 ingresó → Espacio #1 | Espera: 0.0s
+18:12:44,vehiculo_nuevo,info,17,Normal,5,,,🚘 V017 [Normal] → En camino creado
+18:12:45,salida,info,16,Normal,6,,3.43,🚪 V016 salió | Estacionado: 3.43s
+18:12:46,espera,warning,17,Normal,6,,,⏳ V017 esperando cupo...
+18:12:46,ingreso,success,17,Normal,5,,,✅ V017 ingresó → Espacio #1 | Espera: 0.0s
+18:12:49,vehiculo_nuevo,info,18,Normal,5,,,🚘 V018 [Normal] → En camino creado
+18:12:50,salida,info,17,Normal,6,,3.85,🚪 V017 salió | Estacionado: 3.85s
+18:12:50,espera,warning,18,Normal,6,,,⏳ V018 esperando cupo...
+18:12:51,ingreso,success,18,Normal,5,,,✅ V018 ingresó → Espacio #1 | Espera: 0.0s
+18:12:53,vehiculo_nuevo,info,19,Normal,5,,,🚘 V019 [Normal] → En camino creado
+18:12:56,espera,warning,19,Normal,5,,,⏳ V019 esperando cupo...
+18:12:57,ingreso,success,19,Normal,4,,,✅ V019 ingresó → Espacio #2 | Espera: 0.0s
+18:12:57,salida,info,18,Normal,5,,6.68,🚪 V018 salió | Estacionado: 6.68s
+18:12:58,vehiculo_nuevo,info,20,Normal,5,,,🚘 V020 [Normal] → En camino creado
+18:12:59,salida,info,19,Normal,6,,2.89,🚪 V019 salió | Estacionado: 2.89s
+18:13:00,espera,warning,20,Normal,6,,,⏳ V020 esperando cupo...
+18:13:00,ingreso,success,20,Normal,5,,,✅ V020 ingresó → Espacio #1 | Espera: 0.0s
+18:13:03,vehiculo_nuevo,info,21,Discapacidad,5,,,🚘 V021 [Discapacidad] → En camino creado
+18:13:04,salida,info,20,Normal,6,,3.91,🚪 V020 salió | Estacionado: 3.91s
+18:13:04,espera,warning,21,Discapacidad,6,,,⏳ V021 esperando cupo...
+18:13:04,ingreso,success,21,Discapacidad,5,,,✅ V021 ingresó → Espacio #1 | Espera: 0.0s
+18:13:06,vehiculo_nuevo,info,22,Normal,5,,,🚘 V022 [Normal] → En camino creado
+18:13:09,salida,info,21,Discapacidad,6,,4.8,🚪 V021 salió | Estacionado: 4.8s
+18:13:10,espera,warning,22,Normal,6,,,⏳ V022 esperando cupo...
+18:13:10,ingreso,success,22,Normal,5,,,✅ V022 ingresó → Espacio #1 | Espera: 0.0s
+18:13:11,vehiculo_nuevo,info,23,Normal,5,,,🚘 V023 [Normal] → En camino creado
+18:13:13,espera,warning,23,Normal,5,,,⏳ V023 esperando cupo...
+18:13:13,ingreso,success,23,Normal,4,,,✅ V023 ingresó → Espacio #2 | Espera: 0.0s
+18:13:15,salida,info,23,Normal,5,,3.58,🚪 V023 salió | Estacionado: 3.58s
+18:13:16,salida,info,22,Normal,6,,5.88,🚪 V022 salió | Estacionado: 5.88s
+18:13:16,vehiculo_nuevo,info,24,Normal,6,,,🚘 V024 [Normal] → En camino creado
+18:13:17,espera,warning,24,Normal,6,,,⏳ V024 esperando cupo...
+18:13:17,ingreso,success,24,Normal,5,,,✅ V024 ingresó → Espacio #1 | Espera: 0.0s
+18:13:19,vehiculo_nuevo,info,25,Discapacidad,5,,,🚘 V025 [Discapacidad] → En camino creado
+18:13:21,espera,warning,25,Discapacidad,5,,,⏳ V025 esperando cupo...
+18:13:22,ingreso,success,25,Discapacidad,4,,,✅ V025 ingresó → Espacio #2 | Espera: 0.0s
+18:13:24,vehiculo_nuevo,info,26,Normal,4,,,🚘 V026 [Normal] → En camino creado
+18:13:24,salida,info,24,Normal,5,,6.73,🚪 V024 salió | Estacionado: 6.73s
+18:13:26,salida,info,25,Discapacidad,6,,5.29,🚪 V025 salió | Estacionado: 5.29s
+18:13:28,espera,warning,26,Normal,6,,,⏳ V026 esperando cupo...
+18:13:28,ingreso,success,26,Normal,5,,,✅ V026 ingresó → Espacio #1 | Espera: 0.0s
+18:13:29,vehiculo_nuevo,info,27,Normal,5,,,🚘 V027 [Normal] → En camino creado
+18:13:31,espera,warning,27,Normal,5,,1.28,⏳ V027 esperando cupo...
+18:13:31,ingreso,success,27,Normal,4,,1.28,✅ V027 ingresó → Espacio #2 | Espera: 0.0s
+18:13:31,sistema,warning,,,4,,,🛑 Simulador detenido
+18:13:31,salida,info,27,Normal,5,,1.28,🚪 V027 salió | Estacionado: 1.28s
+18:13:31,salida,info,26,Normal,6,,3.39,🚪 V026 salió | Estacionado: 3.39s

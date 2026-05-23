@@ -8,7 +8,7 @@ import time, queue
 from simulador import SimuladorParqueadero, EstadoVehiculo
 from metricas import GestorMetricas
 
-# ── Colores ────────────────────────────────────────────────────────────────────
+# Colores --------------------------------------------------------------------
 BG      = "#0f1117"
 PANEL   = "#1a1d2e"
 CARD    = "#1e2235"
@@ -23,7 +23,7 @@ TXT2    = "#9fa8da"
 DIM     = "#5c6494"
 INFO    = "#7ecfff"
 
-# ── Fuentes ────────────────────────────────────────────────────────────────────
+# Fuentes --------------------------------------------------------------------
 FM = ("Courier New", 9)
 FU = ("Segoe UI", 9)
 FB = ("Segoe UI", 9, "bold")
@@ -75,12 +75,12 @@ class AppParqueadero(tk.Tk):
         self.geometry("1150x760")
         self.minsize(1000, 660)
 
-        # ── Construir UI en orden: header → body → footer ─────────────────
+        # Construir UI en orden: header -> body -> footer -----------------
         self._header()
         self._body()
         self._footer()
 
-        # ── Iniciar loop de actualizacion (solo hilo principal) ───────────
+        # Iniciar loop de actualizacion (solo hilo principal) -----------
         self.after(120, self._loop)
         self.protocol("WM_DELETE_WINDOW", self._cerrar)
 
@@ -90,7 +90,7 @@ class AppParqueadero(tk.Tk):
         sh = self.winfo_screenheight()
         self.geometry(f"1150x760+{(sw-1150)//2}+{(sh-760)//2}")
 
-    # ── HEADER ────────────────────────────────────────────────────────────
+    # HEADER
     def _header(self):
         h = tk.Frame(self, bg=PANEL, height=52)
         h.pack(fill="x", side="top")
@@ -112,7 +112,7 @@ class AppParqueadero(tk.Tk):
         self._lbl_hora.config(text=time.strftime("%H:%M:%S"))
         self.after(1000, self._tick_hora)
 
-    # ── FOOTER ────────────────────────────────────────────────────────────
+    # FOOTER
     def _footer(self):
         f = tk.Frame(self, bg=PANEL, height=26)
         f.pack(fill="x", side="bottom")
@@ -126,7 +126,7 @@ class AppParqueadero(tk.Tk):
         self._lbl_ses = tk.Label(f, text="", font=("Segoe UI", 8), bg=PANEL, fg=DIM)
         self._lbl_ses.pack(side="right", padx=10)
 
-    # ── BODY (usa grid para columnas fijas) ───────────────────────────────
+    # BODY (usa grid para columnas fijas) -------------------------------
     def _body(self):
         """
         Usa grid en lugar de pack para las columnas.
@@ -140,7 +140,7 @@ class AppParqueadero(tk.Tk):
         body.columnconfigure(1, weight=1)
         body.rowconfigure(0, weight=1)
 
-        # ── Columna izquierda ──────────────────────────────────────────────
+        # Columna izquierda ----------------------------------------------
         izq = tk.Frame(body, bg=BG)
         izq.grid(row=0, column=0, sticky="nsew", padx=(0, 4))
 
@@ -148,7 +148,7 @@ class AppParqueadero(tk.Tk):
         self._panel_metricas(izq)
         self._panel_control(izq)
 
-        # ── Columna derecha ────────────────────────────────────────────────
+        # Columna derecha ------------------------------------------------
         der = tk.Frame(body, bg=BG)
         der.grid(row=0, column=1, sticky="nsew")
         der.rowconfigure(0, weight=1)
@@ -158,7 +158,7 @@ class AppParqueadero(tk.Tk):
         self._panel_vehiculos(der)
         self._panel_log(der)
 
-    # ── PANEL ESPACIOS ────────────────────────────────────────────────────
+    # PANEL ESPACIOS
     def _panel_espacios(self, parent):
         fr = mk_card(parent, "ESPACIOS DEL PARQUEADERO")
 
@@ -204,7 +204,7 @@ class AppParqueadero(tk.Tk):
 
             self._ws.append({"box": box, "est": lest, "vid": lvid, "num": lnum})
 
-    # ── PANEL METRICAS ────────────────────────────────────────────────────
+    # PANEL METRICAS
     def _panel_metricas(self, parent):
         fr = mk_card(parent, "METRICAS EN VIVO")
 
@@ -238,7 +238,7 @@ class AppParqueadero(tk.Tk):
                      bg=CARD, fg=TXT, anchor="e", width=8
                      ).grid(row=row, column=c0+1, sticky="e", padx=(0, 8), pady=2)
 
-    # ── PANEL CONTROL ─────────────────────────────────────────────────────
+    # PANEL CONTROL
     def _panel_control(self, parent):
         fr = mk_card(parent, "CONTROL")
 
@@ -296,7 +296,7 @@ class AppParqueadero(tk.Tk):
 
         tk.Frame(fr, bg=CARD, height=6).pack()
 
-    # ── PANEL VEHICULOS ───────────────────────────────────────────────────
+    # PANEL VEHICULOS
     def _panel_vehiculos(self, parent):
         outer = tk.Frame(parent, bg=BORDE)
         outer.grid(row=0, column=0, sticky="nsew", pady=(0, 4))
@@ -333,7 +333,7 @@ class AppParqueadero(tk.Tk):
         self._tree.pack(side="left", fill="both", expand=True, padx=(8, 0), pady=6)
         sb.pack(side="right", fill="y", pady=6, padx=(0, 4))
 
-    # ── PANEL LOG ─────────────────────────────────────────────────────────
+    # PANEL LOG
     def _panel_log(self, parent):
         outer = tk.Frame(parent, bg=BORDE)
         outer.grid(row=1, column=0, sticky="nsew")
@@ -372,12 +372,12 @@ class AppParqueadero(tk.Tk):
         if not self._var_auto.get() or not self.simulador.esta_activo:
             return
         self.simulador.agregar_vehiculo()
-        # Cada 8-12 segundos — 1 vehiculo nuevo mientras otros estan estacionados
+        # Cada 4-7 segundos — mantiene 4-5 espacios ocupados constantemente
         import random as _r
-        intervalo = _r.randint(8000, 12000)
+        intervalo = _r.randint(4000, 7000)
         self.after(intervalo, self._flujo_auto)
 
-    # ── ACCIONES DE BOTONES ───────────────────────────────────────────────
+    # ACCIONES DE BOTONES
     def _do_ini(self):
         cap = self._var_cap.get()
         self.simulador = SimuladorParqueadero(capacidad=cap)
@@ -392,6 +392,13 @@ class AppParqueadero(tk.Tk):
         self._chk_auto.config(state="normal")
         self._lbl_sys.config(text="EN EJECUCION", fg=VERDE)
         self._lbl_ses.config(text=f"Sesion: {self.metricas.nombre_sesion}")
+        # Activar flujo automatico al iniciar y arrancar primeros carros
+        self._var_auto.set(True)
+        # Primeros 6 carros llegan rapido (1s entre cada uno)
+        # para llenar el parqueadero desde el inicio
+        for i in range(cap):
+            self.after(i * 1500, self.simulador.agregar_vehiculo)
+
 
     def _do_det(self):
         self._var_auto.set(False)
@@ -432,7 +439,7 @@ class AppParqueadero(tk.Tk):
         self._chk_auto.config(state="disabled")
         self._lbl_sys.config(text="DETENIDO", fg=ROJO)
 
-    # ── LOOP PRINCIPAL (solo hilo principal via after) ────────────────────
+    # LOOP PRINCIPAL (solo hilo principal via after) --------------------
     def _loop(self):
         """
         Consume la cola del simulador y actualiza la GUI.
@@ -467,7 +474,7 @@ class AppParqueadero(tk.Tk):
         else:
             self._lbl_alerta.config(text="")
 
-    # ── ACTUALIZACIONES DE UI (usan snapshot — sin Lock extra) ───────────
+    # ACTUALIZACIONES DE UI (usan snapshot — sin Lock extra) -----------
     def _upd_espacios(self, snap: dict):
         """Actualiza espacios solo si el estado cambio."""
         if not self._ws:

@@ -1,0 +1,111 @@
+[18:11:40] [INFO   ] 📋 Gestor de métricas iniciado
+[18:11:40] [INFO   ] ✅ Simulador iniciado
+[18:11:41] [INFO   ] 🚘 V001 [Normal] → En camino creado
+[18:11:42] [WARNING] ⏳ V001 esperando cupo...
+[18:11:43] [SUCCESS] ✅ V001 ingresó → Espacio #1 | Espera: 0.0s
+[18:11:45] [INFO   ] 🚘 V002 [Normal] → En camino creado
+[18:11:46] [INFO   ] 🚪 V001 salió | Estacionado: 3.39s
+[18:11:48] [WARNING] ⏳ V002 esperando cupo...
+[18:11:49] [SUCCESS] ✅ V002 ingresó → Espacio #1 | Espera: 0.0s
+[18:11:50] [INFO   ] 🚘 V003 [Discapacidad] → En camino creado
+[18:11:51] [WARNING] ⏳ V003 esperando cupo...
+[18:11:51] [SUCCESS] ✅ V003 ingresó → Espacio #2 | Espera: 0.0s
+[18:11:54] [INFO   ] 🚪 V002 salió | Estacionado: 5.38s
+[18:11:54] [INFO   ] 🚘 V004 [Normal] → En camino creado
+[18:11:55] [INFO   ] 🚪 V003 salió | Estacionado: 4.11s
+[18:11:56] [WARNING] ⏳ V004 esperando cupo...
+[18:11:56] [SUCCESS] ✅ V004 ingresó → Espacio #1 | Espera: 0.0s
+[18:11:58] [INFO   ] 🚘 V005 [Normal] → En camino creado
+[18:11:59] [WARNING] ⏳ V005 esperando cupo...
+[18:12:00] [SUCCESS] ✅ V005 ingresó → Espacio #2 | Espera: 0.0s
+[18:12:00] [INFO   ] 🚪 V004 salió | Estacionado: 4.53s
+[18:12:01] [INFO   ] 🚘 V006 [Normal] → En camino creado
+[18:12:03] [WARNING] ⏳ V006 esperando cupo...
+[18:12:04] [SUCCESS] ✅ V006 ingresó → Espacio #1 | Espera: 0.0s
+[18:12:05] [INFO   ] 🚪 V005 salió | Estacionado: 5.25s
+[18:12:06] [INFO   ] 🚘 V007 [Normal] → En camino creado
+[18:12:08] [WARNING] ⏳ V007 esperando cupo...
+[18:12:08] [SUCCESS] ✅ V007 ingresó → Espacio #2 | Espera: 0.0s
+[18:12:08] [INFO   ] 🚪 V006 salió | Estacionado: 4.95s
+[18:12:10] [INFO   ] 🚘 V008 [Normal] → En camino creado
+[18:12:12] [WARNING] ⏳ V008 esperando cupo...
+[18:12:13] [SUCCESS] ✅ V008 ingresó → Espacio #1 | Espera: 0.0s
+[18:12:13] [INFO   ] 🚘 V009 [Discapacidad] → En camino creado
+[18:12:14] [WARNING] ⏳ V009 esperando cupo...
+[18:12:14] [SUCCESS] ✅ V009 ingresó → Espacio #3 | Espera: 0.0s
+[18:12:15] [INFO   ] 🚪 V007 salió | Estacionado: 6.03s
+[18:12:15] [INFO   ] 🚪 V008 salió | Estacionado: 2.8s
+[18:12:16] [INFO   ] 🚪 V009 salió | Estacionado: 2.46s
+[18:12:16] [INFO   ] 🚘 V010 [Normal] → En camino creado
+[18:12:18] [INFO   ] 🚘 V011 [Normal] → En camino creado
+[18:12:20] [WARNING] ⏳ V010 esperando cupo...
+[18:12:20] [SUCCESS] ✅ V010 ingresó → Espacio #1 | Espera: 0.0s
+[18:12:23] [WARNING] ⏳ V011 esperando cupo...
+[18:12:24] [SUCCESS] ✅ V011 ingresó → Espacio #2 | Espera: 0.0s
+[18:12:24] [INFO   ] 🚘 V012 [Discapacidad] → En camino creado
+[18:12:24] [WARNING] ⏳ V012 esperando cupo...
+[18:12:25] [SUCCESS] ✅ V012 ingresó → Espacio #3 | Espera: 0.0s
+[18:12:25] [INFO   ] 🚪 V010 salió | Estacionado: 5.66s
+[18:12:26] [INFO   ] 🚪 V011 salió | Estacionado: 4.69s
+[18:12:28] [INFO   ] 🚘 V013 [Normal] → En camino creado
+[18:12:29] [INFO   ] 🚪 V012 salió | Estacionado: 4.76s
+[18:12:31] [WARNING] ⏳ V013 esperando cupo...
+[18:12:32] [SUCCESS] ✅ V013 ingresó → Espacio #1 | Espera: 0.0s
+[18:12:33] [INFO   ] 🚘 V014 [Normal] → En camino creado
+[18:12:35] [INFO   ] 🚘 V015 [Normal] → En camino creado
+[18:12:36] [WARNING] ⏳ V014 esperando cupo...
+[18:12:36] [SUCCESS] ✅ V014 ingresó → Espacio #2 | Espera: 0.0s
+[18:12:37] [WARNING] ⏳ V015 esperando cupo...
+[18:12:38] [SUCCESS] ✅ V015 ingresó → Espacio #3 | Espera: 0.0s
+[18:12:38] [INFO   ] 🚪 V013 salió | Estacionado: 6.48s
+[18:12:39] [INFO   ] 🚪 V014 salió | Estacionado: 3.48s
+[18:12:39] [INFO   ] 🚪 V015 salió | Estacionado: 2.4s
+[18:12:40] [INFO   ] 🚘 V016 [Normal] → En camino creado
+[18:12:41] [WARNING] ⏳ V016 esperando cupo...
+[18:12:42] [SUCCESS] ✅ V016 ingresó → Espacio #1 | Espera: 0.0s
+[18:12:44] [INFO   ] 🚘 V017 [Normal] → En camino creado
+[18:12:45] [INFO   ] 🚪 V016 salió | Estacionado: 3.43s
+[18:12:46] [WARNING] ⏳ V017 esperando cupo...
+[18:12:46] [SUCCESS] ✅ V017 ingresó → Espacio #1 | Espera: 0.0s
+[18:12:49] [INFO   ] 🚘 V018 [Normal] → En camino creado
+[18:12:50] [INFO   ] 🚪 V017 salió | Estacionado: 3.85s
+[18:12:50] [WARNING] ⏳ V018 esperando cupo...
+[18:12:51] [SUCCESS] ✅ V018 ingresó → Espacio #1 | Espera: 0.0s
+[18:12:53] [INFO   ] 🚘 V019 [Normal] → En camino creado
+[18:12:56] [WARNING] ⏳ V019 esperando cupo...
+[18:12:57] [SUCCESS] ✅ V019 ingresó → Espacio #2 | Espera: 0.0s
+[18:12:57] [INFO   ] 🚪 V018 salió | Estacionado: 6.68s
+[18:12:58] [INFO   ] 🚘 V020 [Normal] → En camino creado
+[18:12:59] [INFO   ] 🚪 V019 salió | Estacionado: 2.89s
+[18:13:00] [WARNING] ⏳ V020 esperando cupo...
+[18:13:00] [SUCCESS] ✅ V020 ingresó → Espacio #1 | Espera: 0.0s
+[18:13:03] [INFO   ] 🚘 V021 [Discapacidad] → En camino creado
+[18:13:04] [INFO   ] 🚪 V020 salió | Estacionado: 3.91s
+[18:13:04] [WARNING] ⏳ V021 esperando cupo...
+[18:13:04] [SUCCESS] ✅ V021 ingresó → Espacio #1 | Espera: 0.0s
+[18:13:06] [INFO   ] 🚘 V022 [Normal] → En camino creado
+[18:13:09] [INFO   ] 🚪 V021 salió | Estacionado: 4.8s
+[18:13:10] [WARNING] ⏳ V022 esperando cupo...
+[18:13:10] [SUCCESS] ✅ V022 ingresó → Espacio #1 | Espera: 0.0s
+[18:13:11] [INFO   ] 🚘 V023 [Normal] → En camino creado
+[18:13:13] [WARNING] ⏳ V023 esperando cupo...
+[18:13:13] [SUCCESS] ✅ V023 ingresó → Espacio #2 | Espera: 0.0s
+[18:13:15] [INFO   ] 🚪 V023 salió | Estacionado: 3.58s
+[18:13:16] [INFO   ] 🚪 V022 salió | Estacionado: 5.88s
+[18:13:16] [INFO   ] 🚘 V024 [Normal] → En camino creado
+[18:13:17] [WARNING] ⏳ V024 esperando cupo...
+[18:13:17] [SUCCESS] ✅ V024 ingresó → Espacio #1 | Espera: 0.0s
+[18:13:19] [INFO   ] 🚘 V025 [Discapacidad] → En camino creado
+[18:13:21] [WARNING] ⏳ V025 esperando cupo...
+[18:13:22] [SUCCESS] ✅ V025 ingresó → Espacio #2 | Espera: 0.0s
+[18:13:24] [INFO   ] 🚘 V026 [Normal] → En camino creado
+[18:13:24] [INFO   ] 🚪 V024 salió | Estacionado: 6.73s
+[18:13:26] [INFO   ] 🚪 V025 salió | Estacionado: 5.29s
+[18:13:28] [WARNING] ⏳ V026 esperando cupo...
+[18:13:28] [SUCCESS] ✅ V026 ingresó → Espacio #1 | Espera: 0.0s
+[18:13:29] [INFO   ] 🚘 V027 [Normal] → En camino creado
+[18:13:31] [WARNING] ⏳ V027 esperando cupo...
+[18:13:31] [SUCCESS] ✅ V027 ingresó → Espacio #2 | Espera: 0.0s
+[18:13:31] [WARNING] 🛑 Simulador detenido
+[18:13:31] [INFO   ] 🚪 V027 salió | Estacionado: 1.28s
+[18:13:31] [INFO   ] 🚪 V026 salió | Estacionado: 3.39s

@@ -1,6 +1,6 @@
 """
 simulador.py
-
+============
 Núcleo del Simulador de Parqueadero Inteligente.
 
 Analogía con Sistemas Operativos:
@@ -11,6 +11,7 @@ Analogía con Sistemas Operativos:
   - Event        → Señal de control del SO (interrupciones / shutdown)
 
 Universidad EAN · Arquitectura de Computadores y Sistemas Operativos
+Docente: Diana Carolina Beltrán Peña
 """
 
 import threading
@@ -21,21 +22,23 @@ from enum import Enum
 from dataclasses import dataclass, field
 from typing import Optional
 
-
+# ─────────────────────────────────────────────
 #  CONFIGURACIÓN GLOBAL
-
+# ─────────────────────────────────────────────
 random.seed(42)          # Reproducibilidad de resultados
 
 CAPACIDAD_DEFAULT     = 6   # Espacios totales del parqueadero
-TIEMPO_MIN_ESPERA     = 1   # Segundos minimos antes de intentar entrar (llegan rapido)
+TIEMPO_MIN_ESPERA     = 1   # Segundos minimos antes de intentar entrar
 TIEMPO_MAX_ESPERA     = 2   # Segundos maximos antes de intentar entrar
-TIEMPO_MIN_ESTACION   = 10   # Segundos minimos estacionado (visible en pantalla)
-TIEMPO_MAX_ESTACION   = 15  # Segundos maximos estacionado
-TIMEOUT_INGRESO       = 10  # Segundos maximos esperando un cupo
-MAX_VEHICULOS_ACTIVOS = 10  # Maximo hilos activos simultaneos
+TIEMPO_MIN_ESTACION   = 10  # Segundos minimos estacionado
+TIEMPO_MAX_ESTACION   = 20  # Segundos maximos estacionado
+TIMEOUT_INGRESO       = 25  # Segundos maximos esperando un cupo
+MAX_VEHICULOS_ACTIVOS = 12  # Maximo hilos activos simultaneos
 
 
+# ─────────────────────────────────────────────
 #  ENUMERACIONES
+# ─────────────────────────────────────────────
 class EstadoVehiculo(Enum):
     """
     Ciclo de vida del vehículo (análogo al ciclo de vida de un proceso en SO).
@@ -63,8 +66,9 @@ class TipoVehiculo(Enum):
         self.prioridad = prioridad
 
 
-
+# ─────────────────────────────────────────────
 #  MODELO DE VEHÍCULO
+# ─────────────────────────────────────────────
 @dataclass
 class Vehiculo:
     """
@@ -98,7 +102,9 @@ class Vehiculo:
         return f"V{self.id:03d} [{self.tipo.etiqueta}] → {self.estado.value}"
 
 
+# ─────────────────────────────────────────────
 #  NÚCLEO DEL SIMULADOR
+# ─────────────────────────────────────────────
 class SimuladorParqueadero:
     """
     Gestiona la simulación concurrente del parqueadero.
@@ -148,7 +154,9 @@ class SimuladorParqueadero:
         self._suma_tiempos_espera:        float = 0.0
         self._suma_tiempos_estacion:      float = 0.0
 
+    # ─────────────────────────────────────────
     #  PROPIEDADES DE SOLO LECTURA
+    # ─────────────────────────────────────────
     @property
     def espacios_libres(self) -> int:
         return self.capacidad - self._espacios_ocupados
@@ -206,12 +214,14 @@ class SimuladorParqueadero:
                 "estacion_prom": round(self._suma_tiempos_estacion / p, 2) if p else 0.0,
             }
 
+    # ─────────────────────────────────────────
     #  MÉTODOS DE CONTROL
+    # ─────────────────────────────────────────
     def iniciar(self):
         """Inicia el simulador limpiando el evento de parada."""
         self._evento_parada.clear()
         self._evento_pausa.set()
-        self._emitir_evento("sistema", "✅ Simulador iniciado", "info")
+        self._emitir_evento("sistema", "Simulador iniciado", "info")
 
     def detener(self):
         """
@@ -221,17 +231,17 @@ class SimuladorParqueadero:
         """
         self._evento_parada.set()
         self._evento_pausa.set()  # Desbloquear si estaba pausado
-        self._emitir_evento("sistema", "🛑 Simulador detenido", "warning")
+        self._emitir_evento("sistema", "Simulador detenido", "warning")
 
     def pausar(self):
         """Pausa todos los hilos (análogo a suspensión de procesos)."""
         self._evento_pausa.clear()
-        self._emitir_evento("sistema", "⏸️ Simulador pausado", "warning")
+        self._emitir_evento("sistema", "Simulador pausado", "warning")
 
     def reanudar(self):
         """Reanuda los hilos pausados."""
         self._evento_pausa.set()
-        self._emitir_evento("sistema", "▶️ Simulador reanudado", "info")
+        self._emitir_evento("sistema", "Simulador reanudado", "info")
 
     def reiniciar(self, nueva_capacidad: Optional[int] = None):
         """Reinicia el simulador completamente."""
@@ -244,9 +254,11 @@ class SimuladorParqueadero:
 
         cap = nueva_capacidad or self.capacidad
         self.__init__(cap)
-        self._emitir_evento("sistema", "🔄 Simulador reiniciado", "info")
+        self._emitir_evento("sistema", "Simulador reiniciado", "info")
 
+    # ─────────────────────────────────────────
     #  AGREGAR VEHÍCULOS
+    # ─────────────────────────────────────────
     def agregar_vehiculo(self, tipo: TipoVehiculo = None) -> Optional[Vehiculo]:
         """
         Crea un nuevo vehículo y lanza su hilo de ejecución.
@@ -288,7 +300,7 @@ class SimuladorParqueadero:
         self._hilos_activos.append(hilo)
         hilo.start()
 
-        self._emitir_evento("vehiculo_nuevo", f"🚘 {vehiculo} creado", "info", vehiculo)
+        self._emitir_evento("vehiculo_nuevo", f"{vehiculo} creado", "info", vehiculo)
         return vehiculo
 
     def agregar_lote(self, cantidad: int):
@@ -303,7 +315,9 @@ class SimuladorParqueadero:
         hilo = threading.Thread(target=_lanzar, daemon=True)
         hilo.start()
 
+    # ─────────────────────────────────────────
     #  CICLO DE VIDA DEL VEHÍCULO (HILO)
+    # ─────────────────────────────────────────
     def _ciclo_vehiculo(self, v: Vehiculo):
         """
         Ciclo de vida completo de un vehículo en su propio hilo.
@@ -335,7 +349,7 @@ class SimuladorParqueadero:
         # ── FASE 2: Esperando cupo ─────────────────────────────────────────
         self._actualizar_estado(v, EstadoVehiculo.ESPERANDO_CUPO)
         v.tiempo_llegada = time.time()  # Registrar tiempo real de espera
-        self._emitir_evento("espera", f"⏳ V{v.id:03d} esperando cupo...", "warning", v)
+        self._emitir_evento("espera", f"V{v.id:03d} esperando cupo...", "warning", v)
 
         # SEMÁFORO: acquire() bloquea si no hay cupos (planificador del SO)
         # timeout evita espera infinita → previene deadlock
@@ -351,7 +365,7 @@ class SimuladorParqueadero:
             self._actualizar_estado(v, EstadoVehiculo.TIMEOUT)
             with self._lock:
                 self._total_vehiculos_timeout += 1
-            self._emitir_evento("timeout", f"❌ V{v.id:03d} se fue sin cupo (timeout)", "error", v)
+            self._emitir_evento("timeout", f"V{v.id:03d} sin cupo - timeout", "error", v)
             return
 
         # ── FASE 3: Ingresar al parqueadero ───────────────────────────────
@@ -370,7 +384,7 @@ class SimuladorParqueadero:
         self._actualizar_estado(v, EstadoVehiculo.ESTACIONADO)
         self._emitir_evento(
             "ingreso",
-            f"✅ V{v.id:03d} ingresó → Espacio #{v.espacio_asignado} "
+            f"V{v.id:03d} ingreso -> Espacio #{v.espacio_asignado} "
             f"| Espera: {v.tiempo_espera}s",
             "success", v
         )
@@ -410,7 +424,9 @@ class SimuladorParqueadero:
                 self._vehiculos.pop(v.id, None)
         threading.Thread(target=_limpiar, daemon=True).start()
 
+    # ─────────────────────────────────────────
     #  UTILIDADES INTERNAS
+    # ─────────────────────────────────────────
     def _esperar_interruptible(self, segundos: float):
         """
         Espera interruptible que respeta el evento de parada y pausa.
@@ -447,7 +463,9 @@ class SimuladorParqueadero:
         }
         self.cola_eventos.put(evento)
 
+    # ─────────────────────────────────────────
     #  MÉTRICAS
+    # ─────────────────────────────────────────
     def obtener_metricas(self) -> dict:
         """
         Retorna métricas actuales del simulador.

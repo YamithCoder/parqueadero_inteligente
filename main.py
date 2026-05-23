@@ -1,6 +1,5 @@
 """
 main.py
-=======
 Punto de entrada del Simulador de Parqueadero Inteligente.
 
 Uso:
