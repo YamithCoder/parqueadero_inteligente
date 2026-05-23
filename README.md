@@ -125,7 +125,7 @@ Las métricas incluyen: utilización del parqueadero, tiempo promedio de espera,
 
 ---
 
-##Conceptos de SO aplicados
+## Conceptos de SO aplicados
 
 - **Concurrencia:** múltiples hilos ejecutándose simultáneamente
 - **Exclusión mutua:** Lock protege la sección crítica
@@ -136,6 +136,6 @@ Las métricas incluyen: utilización del parqueadero, tiempo promedio de espera,
 
 ---
 
-##Licencia
+## Licencia
 
 Proyecto académico — Universidad EAN 2026
