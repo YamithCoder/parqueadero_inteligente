@@ -1,0 +1,2 @@
+hora,tipo,nivel,vehiculo_id,vehiculo_tipo,espacios_libres,tiempo_espera_s,tiempo_estacion_s,mensaje
+18:20:49,sistema,info,,,,,,📋 Gestor de métricas iniciado
