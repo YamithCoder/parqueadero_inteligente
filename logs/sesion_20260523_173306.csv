@@ -1,4 +1,0 @@
-hora,tipo,nivel,vehiculo_id,vehiculo_tipo,espacios_libres,tiempo_espera_s,tiempo_estacion_s,mensaje
-17:33:06,sistema,info,,,,,,📋 Gestor de métricas iniciado
-17:33:06,sistema,info,,,6,,,✅ Simulador iniciado
-17:33:09,sistema,warning,,,6,,,🛑 Simulador detenido
