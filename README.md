@@ -136,6 +136,12 @@ Las métricas incluyen: utilización del parqueadero, tiempo promedio de espera,
 
 ---
 
+## 🎥 Video explicativo
+
+[Video explicativo](https://youtu.be/i86e5hM7VVs)
+
+---
+
 ## Licencia
 
 Proyecto académico — Universidad EAN 2026
