@@ -1,0 +1,48 @@
+hora,tipo,nivel,vehiculo_id,vehiculo_tipo,espacios_libres,tiempo_espera_s,tiempo_estacion_s,mensaje
+18:12:42,sistema,info,,,,,,📋 Gestor de métricas iniciado
+18:12:42,sistema,info,,,6,,,Simulador iniciado
+18:12:42,vehiculo_nuevo,info,1,Normal,6,,,V001 [Normal] → En camino creado
+18:12:43,espera,warning,1,Normal,6,,,V001 esperando cupo...
+18:12:43,ingreso,success,1,Normal,5,,,V001 ingreso -> Espacio #1 | Espera: 0.0s
+18:12:43,vehiculo_nuevo,info,2,Normal,5,,,V002 [Normal] → En camino creado
+18:12:45,vehiculo_nuevo,info,3,Normal,5,,,V003 [Normal] → En camino creado
+18:12:45,espera,warning,2,Normal,5,,,V002 esperando cupo...
+18:12:45,ingreso,success,2,Normal,4,,,V002 ingreso -> Espacio #2 | Espera: 0.0s
+18:12:46,vehiculo_nuevo,info,4,Normal,4,,,V004 [Normal] → En camino creado
+18:12:47,espera,warning,3,Normal,4,,,V003 esperando cupo...
+18:12:47,ingreso,success,3,Normal,3,,,V003 ingreso -> Espacio #3 | Espera: 0.0s
+18:12:48,espera,warning,4,Normal,3,,,V004 esperando cupo...
+18:12:48,ingreso,success,4,Normal,2,,,V004 ingreso -> Espacio #4 | Espera: 0.0s
+18:12:49,vehiculo_nuevo,info,5,Normal,2,,,V005 [Normal] → En camino creado
+18:12:50,vehiculo_nuevo,info,6,Normal,2,,,V006 [Normal] → En camino creado
+18:12:50,espera,warning,5,Normal,2,,,V005 esperando cupo...
+18:12:50,ingreso,success,5,Normal,1,,,V005 ingreso -> Espacio #5 | Espera: 0.0s
+18:12:51,espera,warning,6,Normal,1,,,V006 esperando cupo...
+18:12:51,ingreso,success,6,Normal,0,,,V006 ingreso -> Espacio #6 | Espera: 0.0s
+18:12:56,salida,info,1,Normal,1,,12.77,V001 salio | Estacionado: 12.77s
+18:12:56,salida,info,2,Normal,2,,10.87,V002 salio | Estacionado: 10.87s
+18:12:59,salida,info,3,Normal,3,,12.19,V003 salio | Estacionado: 12.19s
+18:13:02,salida,info,5,Normal,4,,12.21,V005 salio | Estacionado: 12.21s
+18:13:02,salida,info,4,Normal,5,,15.06,V004 salio | Estacionado: 15.06s
+18:13:07,salida,info,6,Normal,6,,15.89,V006 salio | Estacionado: 15.89s
+18:13:16,vehiculo_nuevo,info,7,Normal,6,,,V007 [Normal] → En camino creado
+18:13:17,espera,warning,7,Normal,6,,,V007 esperando cupo...
+18:13:17,ingreso,success,7,Normal,5,,,V007 ingreso -> Espacio #1 | Espera: 0.0s
+18:13:18,vehiculo_nuevo,info,8,Normal,5,,,V008 [Normal] → En camino creado
+18:13:19,espera,warning,8,Normal,5,,,V008 esperando cupo...
+18:13:19,ingreso,success,8,Normal,4,,,V008 ingreso -> Espacio #2 | Espera: 0.0s
+18:13:19,vehiculo_nuevo,info,9,Normal,4,,,V009 [Normal] → En camino creado
+18:13:20,vehiculo_nuevo,info,10,Normal,4,,,V010 [Normal] → En camino creado
+18:13:20,espera,warning,9,Normal,4,,,V009 esperando cupo...
+18:13:20,ingreso,success,9,Normal,3,,,V009 ingreso -> Espacio #3 | Espera: 0.0s
+18:13:21,vehiculo_nuevo,info,11,Discapacidad,3,,,V011 [Discapacidad] → En camino creado
+18:13:21,espera,warning,11,Discapacidad,3,,,V011 esperando cupo...
+18:13:21,ingreso,success,11,Discapacidad,2,,,V011 ingreso -> Espacio #4 | Espera: 0.0s
+18:13:22,espera,warning,10,Normal,2,,,V010 esperando cupo...
+18:13:22,ingreso,success,10,Normal,1,,,V010 ingreso -> Espacio #5 | Espera: 0.0s
+18:13:32,salida,info,8,Normal,2,,13.37,V008 salio | Estacionado: 13.37s
+18:13:35,salida,info,7,Normal,3,,16.98,V007 salio | Estacionado: 16.98s
+18:13:35,salida,info,9,Normal,4,,15.36,V009 salio | Estacionado: 15.36s
+18:13:38,salida,info,10,Normal,5,,16.19,V010 salio | Estacionado: 16.19s
+18:13:40,salida,info,11,Discapacidad,6,,18.29,V011 salio | Estacionado: 18.29s
+18:13:57,sistema,warning,,,6,,,Simulador detenido

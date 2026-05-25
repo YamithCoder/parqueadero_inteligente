@@ -1,0 +1,47 @@
+[18:12:42] [INFO   ] 📋 Gestor de métricas iniciado
+[18:12:42] [INFO   ] Simulador iniciado
+[18:12:42] [INFO   ] V001 [Normal] → En camino creado
+[18:12:43] [WARNING] V001 esperando cupo...
+[18:12:43] [SUCCESS] V001 ingreso -> Espacio #1 | Espera: 0.0s
+[18:12:43] [INFO   ] V002 [Normal] → En camino creado
+[18:12:45] [INFO   ] V003 [Normal] → En camino creado
+[18:12:45] [WARNING] V002 esperando cupo...
+[18:12:45] [SUCCESS] V002 ingreso -> Espacio #2 | Espera: 0.0s
+[18:12:46] [INFO   ] V004 [Normal] → En camino creado
+[18:12:47] [WARNING] V003 esperando cupo...
+[18:12:47] [SUCCESS] V003 ingreso -> Espacio #3 | Espera: 0.0s
+[18:12:48] [WARNING] V004 esperando cupo...
+[18:12:48] [SUCCESS] V004 ingreso -> Espacio #4 | Espera: 0.0s
+[18:12:49] [INFO   ] V005 [Normal] → En camino creado
+[18:12:50] [INFO   ] V006 [Normal] → En camino creado
+[18:12:50] [WARNING] V005 esperando cupo...
+[18:12:50] [SUCCESS] V005 ingreso -> Espacio #5 | Espera: 0.0s
+[18:12:51] [WARNING] V006 esperando cupo...
+[18:12:51] [SUCCESS] V006 ingreso -> Espacio #6 | Espera: 0.0s
+[18:12:56] [INFO   ] V001 salio | Estacionado: 12.77s
+[18:12:56] [INFO   ] V002 salio | Estacionado: 10.87s
+[18:12:59] [INFO   ] V003 salio | Estacionado: 12.19s
+[18:13:02] [INFO   ] V005 salio | Estacionado: 12.21s
+[18:13:02] [INFO   ] V004 salio | Estacionado: 15.06s
+[18:13:07] [INFO   ] V006 salio | Estacionado: 15.89s
+[18:13:16] [INFO   ] V007 [Normal] → En camino creado
+[18:13:17] [WARNING] V007 esperando cupo...
+[18:13:17] [SUCCESS] V007 ingreso -> Espacio #1 | Espera: 0.0s
+[18:13:18] [INFO   ] V008 [Normal] → En camino creado
+[18:13:19] [WARNING] V008 esperando cupo...
+[18:13:19] [SUCCESS] V008 ingreso -> Espacio #2 | Espera: 0.0s
+[18:13:19] [INFO   ] V009 [Normal] → En camino creado
+[18:13:20] [INFO   ] V010 [Normal] → En camino creado
+[18:13:20] [WARNING] V009 esperando cupo...
+[18:13:20] [SUCCESS] V009 ingreso -> Espacio #3 | Espera: 0.0s
+[18:13:21] [INFO   ] V011 [Discapacidad] → En camino creado
+[18:13:21] [WARNING] V011 esperando cupo...
+[18:13:21] [SUCCESS] V011 ingreso -> Espacio #4 | Espera: 0.0s
+[18:13:22] [WARNING] V010 esperando cupo...
+[18:13:22] [SUCCESS] V010 ingreso -> Espacio #5 | Espera: 0.0s
+[18:13:32] [INFO   ] V008 salio | Estacionado: 13.37s
+[18:13:35] [INFO   ] V007 salio | Estacionado: 16.98s
+[18:13:35] [INFO   ] V009 salio | Estacionado: 15.36s
+[18:13:38] [INFO   ] V010 salio | Estacionado: 16.19s
+[18:13:40] [INFO   ] V011 salio | Estacionado: 18.29s
+[18:13:57] [WARNING] Simulador detenido

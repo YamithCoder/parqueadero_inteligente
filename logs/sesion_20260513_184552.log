@@ -1,0 +1,135 @@
+[18:45:52] [INFO   ] 📋 Gestor de métricas iniciado
+[18:45:52] [INFO   ] ✅ Simulador iniciado
+[18:46:00] [INFO   ] 🚘 V001 [Normal] → En camino creado
+[18:46:01] [WARNING] ⏳ V001 esperando cupo...
+[18:46:01] [SUCCESS] ✅ V001 ingresó → Espacio #1 | Espera: 0.0s
+[18:46:09] [INFO   ] 🚘 V002 [Normal] → En camino creado
+[18:46:10] [WARNING] ⏳ V002 esperando cupo...
+[18:46:10] [SUCCESS] ✅ V002 ingresó → Espacio #2 | Espera: 0.0s
+[18:46:11] [INFO   ] V001 salio | Estacionado: 9.74s
+[18:46:20] [INFO   ] 🚘 V003 [Normal] → En camino creado
+[18:46:22] [WARNING] ⏳ V003 esperando cupo...
+[18:46:23] [SUCCESS] ✅ V003 ingresó → Espacio #1 | Espera: 0.0s
+[18:46:25] [INFO   ] V002 salio | Estacionado: 14.26s
+[18:46:29] [INFO   ] 🚘 V004 [Normal] → En camino creado
+[18:46:30] [WARNING] ⏳ V004 esperando cupo...
+[18:46:30] [SUCCESS] ✅ V004 ingresó → Espacio #2 | Espera: 0.0s
+[18:46:31] [INFO   ] V003 salio | Estacionado: 8.66s
+[18:46:39] [INFO   ] 🚘 V005 [Normal] → En camino creado
+[18:46:40] [INFO   ] V004 salio | Estacionado: 9.39s
+[18:46:40] [WARNING] ⏳ V005 esperando cupo...
+[18:46:41] [SUCCESS] ✅ V005 ingresó → Espacio #1 | Espera: 0.0s
+[18:46:49] [INFO   ] 🚘 V006 [Normal] → En camino creado
+[18:46:51] [WARNING] ⏳ V006 esperando cupo...
+[18:46:51] [SUCCESS] ✅ V006 ingresó → Espacio #2 | Espera: 0.0s
+[18:46:52] [INFO   ] V005 salio | Estacionado: 11.14s
+[18:47:00] [INFO   ] 🚘 V007 [Normal] → En camino creado
+[18:47:02] [WARNING] ⏳ V007 esperando cupo...
+[18:47:02] [SUCCESS] ✅ V007 ingresó → Espacio #1 | Espera: 0.0s
+[18:47:04] [INFO   ] V006 salio | Estacionado: 13.64s
+[18:47:09] [INFO   ] 🚘 V008 [Normal] → En camino creado
+[18:47:10] [WARNING] ⏳ V008 esperando cupo...
+[18:47:11] [SUCCESS] ✅ V008 ingresó → Espacio #2 | Espera: 0.0s
+[18:47:11] [INFO   ] V007 salio | Estacionado: 9.51s
+[18:47:17] [INFO   ] 🚘 V009 [Normal] → En camino creado
+[18:47:17] [INFO   ] 🚘 V010 [Normal] → En camino creado
+[18:47:18] [WARNING] ⏳ V009 esperando cupo...
+[18:47:19] [SUCCESS] ✅ V009 ingresó → Espacio #1 | Espera: 0.0s
+[18:47:19] [INFO   ] 🚘 V011 [Normal] → En camino creado
+[18:47:20] [WARNING] ⏳ V010 esperando cupo...
+[18:47:21] [SUCCESS] ✅ V010 ingresó → Espacio #3 | Espera: 0.0s
+[18:47:22] [INFO   ] V008 salio | Estacionado: 8.73s
+[18:47:23] [INFO   ] 🚘 V012 [Normal] → En camino creado
+[18:47:23] [INFO   ] 🚘 V013 [Normal] → En camino creado
+[18:47:24] [WARNING] ⏳ V011 esperando cupo...
+[18:47:25] [SUCCESS] ✅ V011 ingresó → Espacio #2 | Espera: 0.0s
+[18:47:25] [WARNING] ⏳ V012 esperando cupo...
+[18:47:26] [SUCCESS] ✅ V012 ingresó → Espacio #4 | Espera: 0.0s
+[18:47:26] [WARNING] ⏳ V013 esperando cupo...
+[18:47:27] [SUCCESS] ✅ V013 ingresó → Espacio #5 | Espera: 0.0s
+[18:47:28] [INFO   ] 🚘 V014 [Normal] → En camino creado
+[18:47:29] [INFO   ] V009 salio | Estacionado: 10.65s
+[18:47:30] [WARNING] ⏳ V014 esperando cupo...
+[18:47:31] [SUCCESS] ✅ V014 ingresó → Espacio #1 | Espera: 0.0s
+[18:47:31] [INFO   ] V012 salio | Estacionado: 8.71s
+[18:47:31] [INFO   ] V011 salio | Estacionado: 9.63s
+[18:47:32] [INFO   ] V013 salio | Estacionado: 9.95s
+[18:47:33] [INFO   ] V010 salio | Estacionado: 14.03s
+[18:47:38] [INFO   ] 🚘 V015 [Normal] → En camino creado
+[18:47:40] [WARNING] ⏳ V015 esperando cupo...
+[18:47:40] [SUCCESS] ✅ V015 ingresó → Espacio #2 | Espera: 0.0s
+[18:47:40] [INFO   ] V014 salio | Estacionado: 10.49s
+[18:47:49] [INFO   ] 🚘 V016 [Normal] → En camino creado
+[18:47:50] [WARNING] ⏳ V016 esperando cupo...
+[18:47:51] [SUCCESS] ✅ V016 ingresó → Espacio #1 | Espera: 0.0s
+[18:47:52] [INFO   ] V015 salio | Estacionado: 12.54s
+[18:48:00] [INFO   ] V016 salio | Estacionado: 9.71s
+[18:48:00] [INFO   ] 🚘 V017 [Normal] → En camino creado
+[18:48:01] [WARNING] ⏳ V017 esperando cupo...
+[18:48:01] [SUCCESS] ✅ V017 ingresó → Espacio #1 | Espera: 0.0s
+[18:48:03] [INFO   ] 🚘 V018 [Normal] → En camino creado
+[18:48:04] [WARNING] ⏳ V018 esperando cupo...
+[18:48:05] [SUCCESS] ✅ V018 ingresó → Espacio #2 | Espera: 0.0s
+[18:48:09] [INFO   ] 🚘 V019 [Normal] → En camino creado
+[18:48:11] [WARNING] ⏳ V019 esperando cupo...
+[18:48:11] [SUCCESS] ✅ V019 ingresó → Espacio #3 | Espera: 0.0s
+[18:48:13] [INFO   ] 🚘 V020 [Normal] → En camino creado
+[18:48:14] [INFO   ] V017 salio | Estacionado: 12.48s
+[18:48:15] [WARNING] ⏳ V020 esperando cupo...
+[18:48:15] [SUCCESS] ✅ V020 ingresó → Espacio #1 | Espera: 0.0s
+[18:48:18] [INFO   ] V019 salio | Estacionado: 8.24s
+[18:48:18] [INFO   ] V018 salio | Estacionado: 13.9s
+[18:48:22] [INFO   ] 🚘 V021 [Normal] → En camino creado
+[18:48:24] [WARNING] ⏳ V021 esperando cupo...
+[18:48:24] [SUCCESS] ✅ V021 ingresó → Espacio #2 | Espera: 0.0s
+[18:48:26] [INFO   ] 🚘 V022 [Normal] → En camino creado
+[18:48:28] [WARNING] ⏳ V022 esperando cupo...
+[18:48:28] [SUCCESS] ✅ V022 ingresó → Espacio #3 | Espera: 0.0s
+[18:48:29] [INFO   ] V020 salio | Estacionado: 14.39s
+[18:48:31] [INFO   ] 🚘 V023 [Normal] → En camino creado
+[18:48:31] [INFO   ] 🚘 V024 [Normal] → En camino creado
+[18:48:33] [WARNING] ⏳ V023 esperando cupo...
+[18:48:33] [SUCCESS] ✅ V023 ingresó → Espacio #1 | Espera: 0.0s
+[18:48:34] [WARNING] ⏳ V024 esperando cupo...
+[18:48:34] [SUCCESS] ✅ V024 ingresó → Espacio #4 | Espera: 0.0s
+[18:48:36] [INFO   ] 🚘 V025 [Normal] → En camino creado
+[18:48:36] [INFO   ] V021 salio | Estacionado: 12.62s
+[18:48:38] [WARNING] ⏳ V025 esperando cupo...
+[18:48:39] [SUCCESS] ✅ V025 ingresó → Espacio #2 | Espera: 0.0s
+[18:48:39] [INFO   ] V022 salio | Estacionado: 11.21s
+[18:48:41] [INFO   ] 🚘 V026 [Normal] → En camino creado
+[18:48:43] [WARNING] ⏳ V026 esperando cupo...
+[18:48:44] [SUCCESS] ✅ V026 ingresó → Espacio #3 | Espera: 0.0s
+[18:48:44] [INFO   ] V023 salio | Estacionado: 11.02s
+[18:48:46] [INFO   ] V024 salio | Estacionado: 12.08s
+[18:48:47] [INFO   ] V025 salio | Estacionado: 8.98s
+[18:48:52] [INFO   ] V026 salio | Estacionado: 8.77s
+[18:48:53] [INFO   ] 🚘 V027 [Normal] → En camino creado
+[18:48:55] [WARNING] ⏳ V027 esperando cupo...
+[18:48:55] [SUCCESS] ✅ V027 ingresó → Espacio #1 | Espera: 0.0s
+[18:49:03] [INFO   ] 🚘 V028 [Normal] → En camino creado
+[18:49:05] [WARNING] ⏳ V028 esperando cupo...
+[18:49:05] [SUCCESS] ✅ V028 ingresó → Espacio #2 | Espera: 0.0s
+[18:49:07] [INFO   ] V027 salio | Estacionado: 12.19s
+[18:49:13] [INFO   ] 🚘 V029 [Discapacidad] → En camino creado
+[18:49:14] [WARNING] ⏳ V029 esperando cupo...
+[18:49:14] [SUCCESS] ✅ V029 ingresó → Espacio #1 | Espera: 0.0s
+[18:49:16] [INFO   ] V028 salio | Estacionado: 11.7s
+[18:49:21] [INFO   ] 🚘 V030 [Normal] → En camino creado
+[18:49:23] [WARNING] ⏳ V030 esperando cupo...
+[18:49:24] [SUCCESS] ✅ V030 ingresó → Espacio #2 | Espera: 0.0s
+[18:49:27] [INFO   ] V029 salio | Estacionado: 12.76s
+[18:49:33] [INFO   ] 🚘 V031 [Normal] → En camino creado
+[18:49:33] [INFO   ] V030 salio | Estacionado: 9.88s
+[18:49:34] [WARNING] ⏳ V031 esperando cupo...
+[18:49:34] [SUCCESS] ✅ V031 ingresó → Espacio #1 | Espera: 0.0s
+[18:49:43] [INFO   ] 🚘 V032 [Normal] → En camino creado
+[18:49:43] [INFO   ] V031 salio | Estacionado: 9.12s
+[18:49:45] [WARNING] ⏳ V032 esperando cupo...
+[18:49:45] [SUCCESS] ✅ V032 ingresó → Espacio #1 | Espera: 0.0s
+[18:49:54] [INFO   ] 🚘 V033 [Normal] → En camino creado
+[18:49:54] [INFO   ] V032 salio | Estacionado: 9.85s
+[18:49:55] [WARNING] ⏳ V033 esperando cupo...
+[18:49:55] [SUCCESS] ✅ V033 ingresó → Espacio #1 | Espera: 0.0s
+[18:49:57] [INFO   ] V033 salio | Estacionado: 2.3s
+[18:49:57] [WARNING] 🛑 Simulador detenido
